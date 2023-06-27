@@ -7,7 +7,7 @@ export default function Content({}) {
       title: "Carnival: Fitness Content Curator",
       summary:
         "Use Carnival to search for podcasts, tv shows, and movies from your favourite platforms to fit perfectly with how long you want to work out for.",
-      img: "./images/work/carnival_logo.png",
+      img: "/images/work/carnival_logo.png",
       alt: "Carnival Logo",
       skills: [],
       links: [
@@ -24,7 +24,7 @@ export default function Content({}) {
       title: "Hing: Share Food Recipes",
       summary:
         "Sharing your favorite recipes made easier.HING ~ a platform to share your recipes, where people like you come to discover and share many home-cooked recipes every day. ",
-      img: "./images/work/hing_logo.png",
+      img: "/images/work/hing_logo.png",
       alt: "Hing Logo",
       skills: [],
       links: [
@@ -38,7 +38,7 @@ export default function Content({}) {
       title: "Loudcar",
       summary:
         "A simple app to communicate with LED hardware using Bluetooth Low Energy (BLE). With Loudcar, a user can update the text, and animate lights. Hassle free support with Google Assistant actions!",
-      img: "./images/work/loudcar_logo.png",
+      img: "/images/work/loudcar_logo.png",
       alt: "Loudcar Logo",
       skills: [],
       links: [
@@ -87,7 +87,7 @@ interface AvatarProps {
 
 function Avatar({ src, alt }: AvatarProps) {
   return (
-    <Image
+    <img
       className="border-8 border-gray-400 w-96 sm:max-w-sm sm:mr-16 shadow-2xl"
       src={`${src}`}
       alt={`${alt}`}

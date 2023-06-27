@@ -5,7 +5,7 @@ export default function About() {
     <div className=" p-8 sm:max-w-3xl mx-auto">
       <h1 className="text-4xl font-bold">About</h1>
       <div className="gap-8 mt-8 mx-auto">
-        <Image
+        <img
           src="./images/avatar.jpg"
           className="float-left object-cover mr-8 mb-8 aspect-square rounded-full w-32 h-32 sm:w-40 sm:h-40"
           alt="Profile photo"
