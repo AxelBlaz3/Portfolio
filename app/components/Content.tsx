@@ -32,6 +32,10 @@ export default function Content({}) {
           "Google Play":
             "https://play.google.com/store/apps/details?id=com.hing",
         },
+        {
+          "Github":
+            "https://github.com/AxelBlaz3/Hing",
+        },
       ],
     },
     {
@@ -45,6 +49,20 @@ export default function Content({}) {
         {
           "Google Play":
             "https://play.google.com/store/apps/details?id=com.loudcar",
+        },
+      ],
+    },
+    {
+      title: "Nano Kernel Updater",
+      summary:
+        "A simple app to install/update Nano kernel to supported devices. The app provides seemless updates to the users and hassle-free kernel flashes using AnyKernel script.",
+      img: "/images/work/nano_logo.jpg",
+      alt: "Nano Logo",
+      skills: [],
+      links: [
+        {
+          "Github":
+            "https://github.com/nano-kernel-project/Nano-Updater",
         },
       ],
     },
