@@ -12,15 +12,15 @@ export default function About() {
         />
 
         <p className="font-body">
-          Hello there! I'm Karthik, a passionate Developer 🚀
+          Hello there! I'm Karthik, a passionate Mobile and Web developer 🚀
           <br />
           <br />
           
-          I'm a Full Stack Developer 👨‍💻, dedicated to developing mobile apps
+          I'm a Full Stack developer 👨‍💻, dedicated to developing both mobile and web apps
           using latest technologies and best practices. I have a strong
           background in a wide range of technologies including but not limited
           to Android, Kotlin, Java, Flutter, Dart, Python, Golang and
-          Typescript. With each project I undertake, I strive to challenge
+          Typescript, MongoDB. With each project I undertake, I strive to challenge
           myself, learn new technologies, and create meaningful solutions. 💡
           <br />
           <br />
