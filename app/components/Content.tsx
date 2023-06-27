@@ -87,10 +87,10 @@ interface AvatarProps {
 
 function Avatar({ src, alt }: AvatarProps) {
   return (
-    <img
+    <Image
       className="border-8 border-gray-400 w-96 sm:max-w-sm sm:mr-16 shadow-2xl"
-      src={src}
-      alt={alt}
+      src={`${src}`}
+      alt={`${alt}`}
     />
   );
 }

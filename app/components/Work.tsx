@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 interface WorkProps {
@@ -31,7 +32,7 @@ export default function Work({
       }}
       className="relative transition flex flex-col rounded-3xl my-8 items-center sm:items-start sm:w-full sm:flex-row sm:pr-16 sm:gap-12 sm:mr-16 sm:my-12 hover:dark:bg-slate-600 hover:bg-slate-300 hover:dark:bg-opacity-50 hover:scale-95"
     >
-      <img
+      <Image
         src={img}
         alt={alt}
         className={

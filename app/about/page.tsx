@@ -1,19 +1,23 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <div className=" p-8 sm:max-w-3xl mx-auto">
       <h1 className="text-4xl font-bold">About</h1>
       <div className="gap-8 mt-8 mx-auto">
-        <img
+        <Image
           src="./images/avatar.jpg"
           className="float-left object-cover mr-8 mb-8 aspect-square rounded-full w-32 h-32 sm:w-40 sm:h-40"
+          alt="Profile photo"
         />
 
         <p className="font-body">
-          Hello there! I'm Karthik, a passionate Developer 🚀
+          {`Hello there! I'm Karthik, a passionate Developer 🚀`}
           <br />
           <br />
-          I'm a Full Stack Developer 👨‍💻, dedicated to developing mobile
-          apps using latest technologies and best practices. I have a strong
+          {`
+          I'm a Full Stack Developer 👨‍💻, dedicated to developing mobile apps
+          using latest technologies and best practices. I have a strong
           background in a wide range of technologies including but not limited
           to Android, Kotlin, Java, Flutter, Dart, Python, Golang and
           Typescript. With each project I undertake, I strive to challenge
@@ -52,7 +56,7 @@ export default function About() {
           <br />
           <br />
           Please feel free to contact me. I am also available on social
-          platforms as linked below:
+          platforms as linked below:`}
         </p>
         <br />
         <ul className="list-disc mx-4">
