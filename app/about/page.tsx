@@ -12,10 +12,10 @@ export default function About() {
         />
 
         <p className="font-body">
-          {`Hello there! I'm Karthik, a passionate Developer 🚀`}
+          Hello there! I'm Karthik, a passionate Developer 🚀
           <br />
           <br />
-          {`
+          
           I'm a Full Stack Developer 👨‍💻, dedicated to developing mobile apps
           using latest technologies and best practices. I have a strong
           background in a wide range of technologies including but not limited
@@ -56,7 +56,7 @@ export default function About() {
           <br />
           <br />
           Please feel free to contact me. I am also available on social
-          platforms as linked below:`}
+          platforms as linked below:
         </p>
         <br />
         <ul className="list-disc mx-4">
