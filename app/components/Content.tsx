@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Work from "./Work";
+import Link from "next/link";
 
 export default function Content({}) {
   const works: any[] = [
@@ -33,8 +34,7 @@ export default function Content({}) {
             "https://play.google.com/store/apps/details?id=com.hing",
         },
         {
-          "Github":
-            "https://github.com/AxelBlaz3/Hing",
+          Github: "https://github.com/AxelBlaz3/Hing",
         },
       ],
     },
@@ -61,8 +61,7 @@ export default function Content({}) {
       skills: [],
       links: [
         {
-          "Github":
-            "https://github.com/nano-kernel-project/Nano-Updater",
+          Github: "https://github.com/nano-kernel-project/Nano-Updater",
         },
       ],
     },
@@ -73,13 +72,13 @@ export default function Content({}) {
       <div className="invisible sm:visible mr-16 ml-0 sm:mt-24 mb-8 bg-slate-300 dark:bg-gray-700 dark:bg-opacity-50 sm:h-96" />
       <div className="z-10 p-6 sm:absolute sm:top-16 sm:p-16 sm:mr-0 sm:gap-32">
         <div className="flex flex-col-reverse sm:flex-row items-center">
-          <h2 className="font-display font-bold mt-8 sm:mt-0 text-center text-3xl sm:text-start sm:pr-24 sm:text-5xl">
+          <h2 className="font-display font-bold mt-8 sm:mt-0 text-center text-xl sm:text-2xl md:text-3xl sm:text-start sm:pr-24">
             Hi, I'm Karthik, a software developer with a passion for using
             technology to make a positive impact on the world.
           </h2>
           <Avatar src={"/images/avatar.jpg"} alt={"Profile picture"} />
         </div>
-        <h1 className="font-bold mt-16 uppercase sm:capitalize sm:font-display text-3xl sm:text-4xl text-center sm:text-start sm:mt-16">
+        <h1 className="font-bold mt-16 uppercase sm:capitalize sm:font-display text-xl sm:text-2xl md:text-3xl text-center sm:text-start sm:mt-16">
           Projects
         </h1>
         {works.map((work, i) => (
@@ -93,6 +92,16 @@ export default function Content({}) {
             links={work.links}
           />
         ))}
+        <p className="text-center text-xs sm:text-sm md:text-md font-body font-bold bg-opacity-50 bg-slate-400 dark:bg-slate-700 rounded-full px-4 py-3">
+          Build with ❤️ using{" "}
+          <Link className="underline" href={"https://nextjs.org"}>
+            Next.js
+          </Link>{" "}
+          and designed using{" "}
+          <Link className="underline" href={"https://tailwindcss.com"}>
+            Tailwind
+          </Link>
+        </p>
       </div>
     </>
   );
