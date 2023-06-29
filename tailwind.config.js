@@ -10,7 +10,7 @@ module.exports = {
     fontFamily: {
       display: ["Montserrat"],
       body: ['"Roboto Mono"'],
-    },
+    }
   },
   plugins: [],
 };

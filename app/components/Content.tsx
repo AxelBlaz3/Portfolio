@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Work from "./Work";
 import Link from "next/link";
 
@@ -69,30 +68,39 @@ export default function Content({}) {
 
   return (
     <>
-      <div className="invisible sm:visible mr-16 ml-0 sm:mt-24 mb-8 bg-slate-300 dark:bg-gray-700 dark:bg-opacity-50 sm:h-96" />
-      <div className="z-10 p-6 sm:absolute sm:top-16 sm:p-16 sm:mr-0 sm:gap-32">
-        <div className="flex flex-col-reverse sm:flex-row items-center">
-          <h2 className="font-display font-bold mt-8 sm:mt-0 text-center text-xl sm:text-2xl md:text-3xl sm:text-start sm:pr-24">
+      <div className="flex flex-col p-6 h-full w-full sm:pb-6">
+        <div className="relative mx-auto sm:pl-10 w-full flex flex-col-reverse sm:flex-row items-center">
+          <div className="z-0 hidden sm:flex absolute right-16 h-[85%] sm:w-screen bg-slate-300 dark:bg-gray-700 dark:bg-opacity-50" />
+
+          <h2 className="z-10 grow font-display font-bold mt-8 sm:mt-0 text-center sm:text-sm md:text-xl lg:text-4xl sm:text-start sm:mr-24">
             Hi, I'm Karthik, a software developer with a passion for using
             technology to make a positive impact on the world.
           </h2>
-          <Avatar src={"/images/avatar.jpg"} alt={"Profile picture"} />
-        </div>
-        <h1 className="font-bold mt-16 uppercase sm:capitalize sm:font-display text-xl sm:text-2xl md:text-3xl text-center sm:text-start sm:mt-16">
-          Projects
-        </h1>
-        {works.map((work, i) => (
-          <Work
-            key={i}
-            summary={work.summary}
-            img={work.img}
-            alt={work.alt}
-            title={work.title}
-            skills={work.skills}
-            links={work.links}
+          <Avatar
+            className="z-10"
+            src={"/images/avatar.png"}
+            alt={"Profile picture"}
           />
-        ))}
-        <p className="text-center text-xs sm:text-sm md:text-md font-body font-bold bg-opacity-50 bg-slate-400 dark:bg-slate-700 rounded-full px-4 py-3">
+        </div>
+        <div className="flex flex-col w-full justify-center sm:mx-8">
+          <h1 className="font-bold mt-16 uppercase sm:capitalize sm:font-display text-xl sm:text-2xl md:text-3xl text-center sm:text-start">
+            Projects
+          </h1>
+          <div className="sm:mr-16 flex flex-col">
+          {works.map((work, i) => (
+            <Work
+              key={i}
+              summary={work.summary}
+              img={work.img}
+              alt={work.alt}
+              title={work.title}
+              skills={work.skills}
+              links={work.links}
+            />
+          ))}
+          </div>
+        </div>
+        <p className="mx-8 text-center text-xs sm:text-sm md:text-md font-body font-bold bg-opacity-40 dark:bg-opacity-40 bg-slate-400 dark:bg-slate-700 rounded-full px-4 py-3">
           Build with ❤️ using{" "}
           <Link className="underline" href={"https://nextjs.org"}>
             Next.js
@@ -110,12 +118,16 @@ export default function Content({}) {
 interface AvatarProps {
   src: string;
   alt: string;
+  className?: string;
 }
 
-function Avatar({ src, alt }: AvatarProps) {
+function Avatar({ src, alt, className }: AvatarProps) {
   return (
     <img
-      className="border-8 border-gray-400 w-96 sm:max-w-sm sm:mr-16 shadow-2xl"
+      className={
+        "w-52 sm:w-60 md:w-80 lg:w-96 aspect-auto border-8 border-gray-400 shadow-2xl sm:mr-32 " +
+        className
+      }
       src={`${src}`}
       alt={`${alt}`}
     />
